@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+
+    <span class="phone" style=" height:fit-content; box-shadow:0 0 1px black; width:fit-content;">
+        <img src="iphone 16.jpg" width="200px" height="200px"><br>iphone 16
+     12gb ram,256 internal storage <br> @80000 only</span>
+     <hr>
+     <br><br>
+     <hr><br>
+    <br>
+    ORDER BY FILL IN THE GIVEN BELOW
+    <div class="order">
+        <select id="state" onchange="sel()">
+            <option value="">STATE</option>
+            <option value="tamil">TAMIL NADU</option>
+        </select>
+        <br><br>
+        <select  id="sel2" style="display: none;" onchange="se()">
+            <option value="" hidden>DISTRICT</option>
+            <option value="1">ARIYALUR</option> <option value="26">TANJAVUR</option>
+            <option value="2">CHENGALPATTU</option> <option value="27">TENI</option>
+            <option value="3">CHENNAI</option> <option value="28">THOOTHUKUDI</option>
+            <option value="4">COIMBATORE</option> <option value="30">TIRUNELVELI</option>
+            <option value="5">CUDDALORE</option> <option value="29">TIRUCHIRAPALLI</option>
+            <option value="6">DHARMAPURI</option> <option value="31">TRIUPATTUR</option>
+            <option value="7">DINDUGAL</option> <option value="32">TRIUPPUR</option>
+            <option value="8">ERODE</option> <option value="33">TIRUVALLUR</option>
+            <option value="9">KALLAKURICHI</option> <option value="34">TIRUVANNAMALAI</option>
+            <option value="10">KANCHIPURAM</option> <option value="35">TRIVARUR</option>
+            <option value="11">KANNIYAKUMARI</option> <option value="36">VELLORE</option>
+            <option value="12">KARUR</option> <option value="37">VILUPPURAM</option>
+            <option value="13">KRISHNAGIRI</option> <option value="38">VIRUDANAGAR</option>
+            <option value="14">MADURAI</option>
+            <option value="15">MAYILADUTHURAI</option>
+            <option value="16">NAGAPATTINAM</option>
+            <option value="17">NAMAKKAL</option>
+            <option value="18">NILLGIRIS</option>
+            <option value="19">PERAMBALUR</option>
+            <option value="20">PUDUKOTTAI</option>
+            <option value="21">RAMANTHAPURAM</option>
+            <option value="22">RANIPET</option>  
+            <option value="23">SALEM</option>  
+            <option value="24">SIVAGANGAI</option>  
+            <option value="25">TENKASI</option>
+        </select>
+        <br><br>        
+        <p id="n" style="display: none;">ADDRESS</p><input type="text" id="np1" style="display:none;">
+            <br>
+        </div>
+        <br>
+    <br><a href="order1.html"><button id="b1" style="display: none;" onclick="ui()">ORDER</button></a>
+</body>
+<script>
+    var state=document.getElementById('state');
+    var sel2=document.getElementById('sel2');
+
+   function sel(){
+    if(state.value === 'tamil'){
+        sel2.style.display='block';
+        
+    }
+    else{
+        sel2.style.display='none';
+    }
+   }
+   var sel2=document.getElementById('sel2');
+   var np1=document.getElementById("np1");
+   var n=document.getElementById("n");
+   var b1=document.getElementById("b1");
+   function se(){
+    if(sel2.value !==''){
+        np1.style.display='block';
+        n.style.display='block';
+        b1.style.display='block';
+        np1.style.border='1px solid green';
+        window.scrollBy(1,sel2.offsetTop -window.scrollY);
+    }
+    
+
+    else{
+        np1.style.display='none';
+        n.style.display='none';
+        b1.style.display='none';
+        
+
+    }
+   }
+   
+    
+
+   
+</script>
+</html>

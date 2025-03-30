@@ -1,0 +1,41 @@
+.im1{
+    background-color: black;
+    box-shadow: 0 0 2px rgb(15, 1, 1);
+    border-radius: 4px;
+}
+#b1{
+    background: black;
+    margin-left: 45px;
+    color: #ffffff;
+    width:200px ;
+    height: 30px;
+    transform: 2s;
+    border: 1px solid wheat;
+    border-radius: 3px;
+
+}
+#b1:hover{
+    filter: drop-shadow(0 0 10px red); 
+    
+    box-shadow: 0 0 10px rgb(234, 0, 255),0 0 15px rgb(132, 0, 255);
+
+}
+#np1{
+    width: 225px;
+    height: 60px;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    margin-left: 20px;
+    pointer-events: painted;
+}
+#state,#sel2{
+    background: rgb(217, 194, 240);
+    width:200px ;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 45px;
+
+}
